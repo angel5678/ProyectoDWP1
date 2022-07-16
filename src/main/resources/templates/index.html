@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>CINEFLEX - Tu cine favorito</title>
+        <meta charset="UTF-8">
+        <link th:href="@{/css/master.css}" rel="stylesheet" type="text/css"/>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar nav-in">
+                
+                <a href="index.html" class="nav-link-in logo-in">CINEFLEX</a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Busca una película" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                <ul class="nav-menu-in">
+                    <li class="nav-menu-item-in"><a class="nav-menu-link-in nav-link-in" href="">Mi Cuenta</a></li>
+                    <li class="nav-menu-item-in"><a class="nav-menu-link-in nav-link-in" href="">Historial</a></li>
+                    <li class="nav-menu-item-in"><a class="nav-menu-link-in nav-link-in" href="">Cartelera</a></li>
+                </ul>
+            </nav>
+        </header>
+        <aside id="barraLateral"> </aside>
+        <section id="contenido">
+            <article>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://blogdesuperheroes.es/wp-content/plugins/BdSGallery/BdSGaleria/16267.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://wallpaperaccess.com/full/2564207.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://pbs.twimg.com/media/DyQnIw5WoAAldLH.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+            </article>
+        </section>
+        <footer id="piePagina">
+            Derechos reservados &COPY; 2022
+        </footer>
+    </body>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</html>

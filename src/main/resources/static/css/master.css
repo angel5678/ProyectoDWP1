@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+}
+
+.header{
+    background-color: #170126;
+    height: 12%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-in{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.nav-link-in{
+    color: white;
+    text-decoration: none;
+}
+
+.logo-in{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 12vh;
+}
+
+.nav-menu-in{
+    display: flex;
+    margin-left: 40px;
+    list-style: none;
+}
+
+.nav-menu-item-in{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 12vh;
+}
+
+.nav-menu-item-in:hover{
+    background-color: #390859;
+    transition: 0.5s;
+}
+
+.nav-menu-link-in{
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 20px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.contenido{
+    background-color: wheat;
+    position: fixed;
+    top: 80px;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    overflow: auto;
+}
+
+#encabezado h1 {
+    display: inline;
+}
+.descripcion {
+    font-size: 18px;
+}
+
+#barraLateral {
+    position: absolute;
+    padding: 20px;
+    top: 12%;
+    left: 85%;
+    height: 85%;
+    width: 15%;
+    background-color: #390859;
+    color: white;
+}
+#contenido {
+    position: absolute;
+    padding: 20px;
+    top: 12%;
+    left: 0;
+    height: 85%;
+    width: 85%;
+    background-color: #EAF2F2;
+    color: #0D0D0D;
+    overflow: auto;
+}
+#piePagina {
+    position: absolute;
+    padding: 2px;
+    bottom: 0;
+    left: 0;
+    height: 3%;
+    width: 100%;
+    background-color: #170126;
+    color: white;
+    text-align: right;
+    font-size: 10px;
+}
