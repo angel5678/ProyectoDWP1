@@ -18,6 +18,7 @@ public class Pelicula implements Serializable{
     private String categoria;
     private String critica;
     private String idiomas;
+    
 
     public Pelicula() {
     }
