@@ -1,0 +1,131 @@
+
+
+#cont {
+    position: absolute;
+    padding: 20px;
+    top: 12%;
+    left: 0;
+    height: 45%;
+    width: 100%;
+    background-color: #EAF2F2;
+    color: #0D0D0D;
+    overflow: auto;
+}
+
+.cartelera{
+    color: whitesmoke;
+    font-size: 40px;
+    background: #390859;
+    background-size: cover;
+    
+    width: 1330px;
+    height: 100px;
+    
+    padding: 20px;
+    
+    border-left: 5px;
+    
+    margin-top: 270px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+   
+}
+
+ .peli1{
+   
+  
+  background: none;
+   
+   width: 210px;
+   height: 290px;
+   
+   padding: 0px;
+   
+     
+    margin-top: 25px;
+    margin-bottom: 0px;
+    margin-left: 110px;
+    margin-right: 0px;
+  
+}
+.titulo{
+    text-align: justify;
+    color: #390859;
+   
+  
+}
+.peli2{
+   background: none;
+   
+   width: 210px;
+   height: 290px;
+   
+   padding: 0px;
+   
+     
+    margin-top: -290px;
+    margin-bottom: 0px;
+    margin-left: 340px;
+    margin-right: 0px;
+  
+}
+.peli3{
+   background: none;
+   
+   width: 210px;
+   height: 290px;
+   
+   padding: 0px;
+   
+     
+    margin-top: -290px;
+    margin-bottom: 0px;
+    margin-left: 570px;
+    margin-right: 0px;
+  
+}
+.peli4{
+   background: none;
+   
+   width: 210px;
+   height: 290px;
+   
+   padding: 0px;
+   
+     
+    margin-top: -290px;
+    margin-bottom: 0px;
+    margin-left: 800px;
+    margin-right: 0px;
+  
+}
+.peli5{
+   background: none;
+   
+   width: 210px;
+   height: 290px;
+   
+   padding: 0px;
+   
+     
+    margin-top: -290px;
+    margin-bottom: 0px;
+    margin-left: 1030px;
+    margin-right: 0px;
+  
+}
+
+#pie {
+   padding: 6px;
+    bottom: 0;
+    left: 0;
+    height: 3%;
+    width: 100%;
+    background-color: #170126;
+    color: white;
+    text-align: right;
+    font-size: 10px;
+}
+
+

@@ -9,10 +9,10 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     </head>
     <body>
-        <header class="header">
+        <header th:replace="layout/plantilla :: header">
             <nav class="navbar nav-in">
                 
-                <a href="index.html" class="nav-link-in logo-in">CINEFLEX</a>
+                <a th:href="@{/}" class="nav-link-in logo-in">CINEFLEX</a>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Busca una película" aria-label="Search">
                     <button class="btn btn-outline-light" type="submit">Search</button>
@@ -20,7 +20,7 @@
                 <ul class="nav-menu-in">
                     <li class="nav-menu-item-in"><a class="nav-menu-link-in nav-link-in" href="">Mi Cuenta</a></li>
                     <li class="nav-menu-item-in"><a class="nav-menu-link-in nav-link-in" href="">Historial</a></li>
-                    <li class="nav-menu-item-in"><a class="nav-menu-link-in nav-link-in" href="">Cartelera</a></li>
+                    <li class="nav-menu-item-in"><a class="nav-menu-link-in nav-link-in" th:href="@{/cartelera/cartelera}">Cartelera</a></li>
                 </ul>
             </nav>
         </header>

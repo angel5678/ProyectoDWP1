@@ -1,12 +1,64 @@
-<!DOCTYPE html>
-
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Cartelera</title>
         <meta charset="UTF-8">
+        <link th:href="@{/css/master.css}" rel="stylesheet" type="text/css"/>
+        <link href="css/master.css" rel="stylesheet" type="text/css"/>
+        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+       <header class="header">
+            <nav class="navbar nav-in">
+                
+                <a href="index.html" class="nav-link-in logo-in">CINEFLEX</a>
+               
+                <ul class="nav-menu-in">
+                    <li class="nav-menu-item-in"><a class="nav-menu-link-in nav-link-in" href="">Mi Cuenta</a></li>
+                    <li class="nav-menu-item-in"><a class="nav-menu-link-in nav-link-in" href="">Historial</a></li>
+                    <li class="nav-menu-item-in"><a class="nav-menu-link-in nav-link-in" href="">Cartelera</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div>
+            <div class="cont-busqueda-mov row">
+             <div class="col8 filtroBusqueda" id="busqueda" style="opacity: 1;">
+                 <div class="col5" style=""><label>Selecciona una ciudad</label>
+                     <div class="selectBlanco" style="">
+                         <div class="selector" id="uniform-cmbCiudades" style="width: 241px;">
+                             <span style="width: 229px; user-select: none;">Selecciona una ciudad</span>
+                             <select name="ctl00$cmbCiudades" id="cmbCiudades" style="">
+                                 <option value="Selecciona una ciudad">Selecciona una ciudad</option>
+                                 <option value="0" clave="cartago-costa-rica">Cartago, Costa Rica</option>
+                                 <option selected="selected" value="1" clave="desamparados-costa-rica">Desamparados, Costa Rica</option>
+                                 <option value="2" clave="heredia-costa-rica">Heredia, Costa Rica</option>
+                                 <option value="3" clave="lindora-costa-rica">Lindora, Costa Rica</option>
+                                 <option value="4" clave="moravia-costa-rica">Moravia, Costa Rica</option>
+                                 <option value="5" clave="tres-rios-costa-rica">Tres Ríos, Costa Rica</option>
+                             </select>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="col5" style=""><label>Selecciona un cine</label>
+                     <div class="selectBlanco" style="">
+                         <div class="selector" id="uniform-cmbComplejos" style="width: 260px;">
+                             <span style="width: 248px; user-select: none;">Selecciona un cine</span>
+                             <select name="ctl00$cmbComplejos" id="cmbComplejos" style=""><option>Selecciona un cine</option>
+                             </select>
+                         </div>
+                     </div>
+                     <a href="/cambio-de-ciudades" class="linkTuCine" style="display:none">
+                         <span>¿No encuentras tu cine?</span>
+                     </a>
+                 </div>
+                 <div class="col2">
+                     <input type="submit" class="btn btnEnviar btnVerCartelera" value="VER CARTELERA">
+                 </div>
+             </div>
+         </div>
+  
+        </div> 
+    
     </body>
 </html>

@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Cartelera</title>
+        <meta charset="UTF-8">
+        <link th:href="@{/css/master.css}" rel="stylesheet" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       <header class="header">
+            <nav class="navbar nav-in">
+                
+                <a th:href="@{/}" class="nav-link-in logo-in">CINEFLEX</a>
+               
+                <ul class="nav-menu-in">
+                    <li class="nav-menu-item-in"><a class="nav-menu-link-in nav-link-in" href="">Mi Cuenta</a></li>
+                    <li class="nav-menu-item-in"><a class="nav-menu-link-in nav-link-in" href="">Historial</a></li>
+                    <li class="nav-menu-item-in"><a class="nav-menu-link-in nav-link-in" href="">Cartelera</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="contenido">
+            <h2>Nuestras peliculas</h2>
+            <a th:href="@{/cartelera/nuevo}">Nueva pelicula</a>
+            <div th:if="${carteleras != null and !carteleras.empty}">
+                <table border="1">
+                    <thead> <tr> <th>Precio</th> <th>Categoria</th> 
+                            <th>Critica</th> <th>Idiomas</th> 
+                            <th>Eliminar</th> <th>Modificar</th> </tr> </thead>
+                    <tbody>
+                        <tr th:each="cartelera : ${carteleras}">
+                            <td th:text="${cartelera.precio}" > </td>
+                  
+                            <td th:text="${cartelera.categoria}">   </td>
+                            <td th:text="${cartelera.critica}"></td>
+                            <td th:text="${cartelera.idiomas}"></td>
+                            <td><a th:href="@{/cartelera/eliminar/} + ${cartelera.idPelicula}">Eliminar</a></td>
+                            <td><a th:href="@{/cartelera/modificar/} + ${cartelera.idPelicula}">Modificar</a></td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+            </div>
+            <div th:if="${carteleras == null or carteleras.empty}">
+                No tenemos peliculas que mostrar...
+            </div>
+  
+        </div> 
+        
+        
+    </body>
+</html>

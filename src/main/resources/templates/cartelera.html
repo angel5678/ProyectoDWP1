@@ -1,0 +1,67 @@
+
+<html>
+    <head>
+        <title>Cartelera</title>
+        <meta charset="UTF-8">
+        <link th:href="@{/css/master.css}" rel="stylesheet" type="text/css"/>
+      
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+       <header class="header">
+            <nav class="navbar nav-in">
+                
+                <a href="index.html" class="nav-link-in logo-in">CINEFLEX</a>
+               
+                <ul class="nav-menu-in">
+                    <li class="nav-menu-item-in"><a class="nav-menu-link-in nav-link-in" href="">Mi Cuenta</a></li>
+                    <li class="nav-menu-item-in"><a class="nav-menu-link-in nav-link-in" href="">Historial</a></li>
+                    <li class="nav-menu-item-in"><a class="nav-menu-link-in nav-link-in" href="">Cartelera</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div>
+            <div>
+                <label>Selecciona la ubicacion</label>
+                <div>
+                    <div style="width: 241px;">
+                        <span style="width: 229px; user-select: none;">Selecciona un lugar</span>
+                        <select name="lugares">
+                            <option value="Selecciona un lugar">Selecciona un lugar </option>
+                            <option value="0" clave="cartago-costa-rica">Cartago, Costa Rica</option>
+                            <option selected="selected" value="1" clave="desamparados-costa-rica">Desamparados, Costa Rica</option>
+                            <option value="2" clave="heredia-costa-rica">Heredia, Costa Rica</option>
+                            <option value="3" clave="lindora-costa-rica">Lindora, Costa Rica</option>
+                            <option value="4" clave="moravia-costa-rica">Moravia, Costa Rica</option>
+                            <option value="5" clave="tres-rios-costa-rica">Tres Ríos, Costa Rica</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label>Selecciona un cine</label>
+                <div >
+                    <div  style="width: 198px;">
+                        <span style="width: 186px; user-select: none;">Selecciona un cine</span>
+                      <select name="Complejos"  style="">
+                          <option>Selecciona un cine</option>
+                      </select>
+                    </div>
+                </div>
+            </div>
+            <div></div>
+  
+        </div> 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </body>
+</html>
